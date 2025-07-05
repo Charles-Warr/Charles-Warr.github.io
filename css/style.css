@@ -2692,9 +2692,15 @@ ul {
 /**************** hero part css end ****************/
 /************client css start***************/
 /* line 3, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_client_logo.scss */
-.client_logo .single_client_logo {
+.client_logo .single_client_logo{
   display: flex;
   align-items: center;
+  background-color: rgb(9, 74, 196);
+  background-image: url("");
+  padding: 20%;
+  margin-top: 20%;
+  border-radius: 100px;
+  
 }
 
 /* line 7, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_client_logo.scss */
