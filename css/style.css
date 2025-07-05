@@ -6176,6 +6176,12 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 600) {
+  .breadcrumb_bg{
+    background-size: auto;
+  }
+  
+}
 
 /* line 5, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_breadcrumb.scss */
 .breadcrumb {
