@@ -4171,7 +4171,9 @@ ul {
 /**********************footer part css*******************/
 /* line 3, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_footer.scss */
 .footer_part .footer_top {
-  padding: 140px 0 100px;
+  /*padding: 140px 0 100px;*/
+  padding-left: 15%; 
+  padding-right: 15%;
 }
 
 @media (max-width: 576px) {
