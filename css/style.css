@@ -2585,7 +2585,7 @@ ul {
 /**************** banner part css start ****************/
 /* line 2, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
 .banner_part {
-  position: relative;
+  position: relative, absolute;
   background-image: url(../pictures/k_d_bg.png);/*("\\Users\munnu\Desktop\Catalyte Dev\munnuo_website\pictures\keith_delora_bg.png");/**/
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -2609,6 +2609,8 @@ ul {
   /* line 8, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
   .banner_part .banner_text {
     height: 650px;
+    text-size-adjust: 100% auto;
+    text-align: auto;
   }
 }
 
@@ -2709,6 +2711,7 @@ ul {
 .client_logo .single_client_logo{
   display: flex;
   align-items: center;
+  text-align: center;
   background-color: rgb(9, 74, 196);
   background-image: url("");
   padding: 20%;
@@ -2725,11 +2728,13 @@ ul {
 /* line 10, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_client_logo.scss */
 .client_logo .single_client_logo {
   height: 150px;
+  text-align: center;
 }
 
 /* line 12, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_client_logo.scss */
 .client_logo .single_client_logo img {
   margin: 0 auto;
+  text-align: center;
 }
 
 /************review_part css start***************/
