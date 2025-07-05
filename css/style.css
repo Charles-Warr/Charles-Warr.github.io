@@ -476,6 +476,7 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 /* line 251, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
@@ -2458,6 +2459,7 @@ ul {
   /* line 265, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
   .navbar-brand img {
     max-width: 100px;
+    width: 20%;
   }
   /* line 269, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
   .navbar-light .navbar-toggler {
@@ -2482,11 +2484,11 @@ ul {
   }
   /* line 291, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
   .navbar-brand img {
-    max-width: 100px;
+    max-width: 20%;
     margin: 0 auto;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 10;
+    right: 10;
     display: inline-block;
     top: 10px;
   }
@@ -2622,6 +2624,7 @@ ul {
     font-size: 25px;
     margin-bottom: 15px;
     line-height: 1.3;
+
   }
 }
 
