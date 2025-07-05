@@ -6101,6 +6101,7 @@ h1, h2, h3, h4, h5, h6 {
   .contact-section .btn_1 {
     margin-bottom: 0px !important;
     margin-top: 0px !important;
+    text-size-adjust: relative;
   }
 }
 
@@ -6177,9 +6178,10 @@ h1, h2, h3, h4, h5, h6 {
 /* line 1, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_breadcrumb.scss */
 .breadcrumb_bg {
   background-image: url("../img/breadcrumb.png");
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
 }
 @media only screen and (max-width: 600) {
   .breadcrumb_bg{
