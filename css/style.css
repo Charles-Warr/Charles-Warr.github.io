@@ -61,14 +61,100 @@ input:hover, input:focus {
   padding: 140px 0px;
 }
 
-.video-container {
-  aspect-ratio: 16/9;
-  width: 100%;
-  height: auto;
-  padding-left: 50%;
-  padding-right: 50%;
-  padding-top: 25%;
-  padding-bottom: 25%;
+  .video-container {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe, 
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+  }
+
+@media only screen and (max-width: 600px) { 
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe, 
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text-document{
+  font-size: 3vw;
+  
+  overflow: auto;
+  margin: 5%;
+}
+
+.text-document p{
+  font-size: 1vw;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+.text-document h3{
+  font-size: 2vw;
+  margin-bottom: 1%;
+  margin-top: 5%;
+}
+
+.text-document ul{
+  font-size: 1vw;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 600px){
+
+  .text-document p{
+    font-size: 3vw;
+  }
+
+  .text-document h3{
+    font-size: 4vw;
+    margin-bottom: 1%;
+    margin-top: 5%;
+  }
+
+  .text-document ul{
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 992px){
+
+  .text-document p{
+    font-size: 3vw;
+  }
+
+  .text-document h3{
+    font-size: 4vw;
+    margin-bottom: 1%;
+    margin-top: 5%;
+  }
+
+  .text-document ul{
+    font-size: 3vw;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2204,6 +2290,7 @@ ul {
 .main_menu .navbar-brand {
   padding-top: 0rem;
   padding-bottom: 0px;
+  width: 15vw;
 }
 
 /* line 14, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
@@ -2469,8 +2556,8 @@ ul {
   }
   /* line 265, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
   .navbar-brand img {
-    max-width: 100px;
-    width: 100%;
+    max-width: 20vw;
+    
   }
   /* line 269, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
   .navbar-light .navbar-toggler {
@@ -2495,7 +2582,7 @@ ul {
   }
   /* line 291, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_menu.scss */
   .navbar-brand img {
-    max-width: 20%;
+    max-width: 20vw;
     margin: 0 auto;
     position: absolute;
     left: 10;
@@ -6181,6 +6268,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 @media only screen and (max-width: 600) {
   .breadcrumb_bg{
