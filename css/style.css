@@ -6302,8 +6302,9 @@ h1, h2, h3, h4, h5, h6 {
 /* line 10, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_breadcrumb.scss */
 .breadcrumb .breadcrumb_iner {
   
-  height: 475px;
-  width: 100%;
+  
+  width: 60vw;
+  height: 20vw;
   display: table;
 }
 
@@ -6320,8 +6321,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 17, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_breadcrumb.scss */
 .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
   color: #fff;
-  font-size: 100vw 20vh;
-  font-weight: 500;
+  font-size: 4vw 2vh;
   margin-bottom: 10px;
   text-transform: capitalize;
 }
@@ -6329,28 +6329,28 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 576px) {
   /* line 17, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_breadcrumb.scss */
   .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
-    font-size: .5vw .5vh;
+    font-size: 0.1vw 0.05vh;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 17, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_breadcrumb.scss */
   .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
-    font-size: 1.2vw 1.2vh;
+    font-size: 1vw 1vh;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 17, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_breadcrumb.scss */
   .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
-    font-size: 40px;
+    font-size: 1vw 1vh;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 17, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_breadcrumb.scss */
   .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
-    font-size: 50px;
+    font-size: 1vw 1vh;
   }
 }
 
