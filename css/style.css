@@ -309,6 +309,41 @@ a:hover {
   text-decoration: none;
 }
 
+.gallery_bg{
+  background-image: url("../img/gallery_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: auto;
+}
+
+div.title{
+  color: blue;
+  text-align: center;
+}
+
+div.gallery{
+  margin: 1vw;
+  float: left;
+  width: 180px;
+}
+
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 /* line 87, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #1194ff;
@@ -6279,11 +6314,12 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 20vw;
   overflow: hidden;
   
 }
+
 @media only screen and (max-width: 600) {
   .breadcrumb_bg{
     background-size: auto;
