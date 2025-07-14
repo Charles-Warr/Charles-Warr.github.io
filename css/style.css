@@ -420,7 +420,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 /* line 139, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
 .section_tittle {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 1px;
 }
 
 @media (max-width: 991px) {
