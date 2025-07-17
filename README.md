@@ -6,4 +6,7 @@ reachable to others.
 
 # Terms of Use
 
+Feel free to use the website at your discretion. 
+
+
 
