@@ -309,6 +309,42 @@ a:hover {
   text-decoration: none;
 }
 
+.team{
+  align-items: center;
+  margin: 3vw;
+  text-align: center;
+
+  img {
+    width: 40vw;
+    height: 25vh;
+    object-fit: contain;
+  }
+
+  p {
+    margin-top: 5%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block; /* or display: inline; */
+    /* Add padding or margin for spacing between items if desired */
+    padding: 10px;
+  }
+}
+
+.team_table, th, td{
+  border:1px solid white;
+  color: white;
+  width: 100%;
+}
+
+
+
 .gallery_bg{
   background-image: url("../img/gallery_bg.png");
   background-position: center;

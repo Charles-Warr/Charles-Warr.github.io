@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Title | Official Website</title>
+  <title>Da Streetz | Official Website</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     * {
       margin: 0;
       padding: 0;
@@ -15,6 +18,7 @@
       line-height: 1.6;
       color: #fff;
       background-color: #121212;
+      overflow-x: hidden;
     }
     header {
       background: #1f1f1f;
@@ -22,14 +26,42 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      position: relative;
     }
-    header nav a {
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .logo img {
+      height: 5vh; /* Adjust as needed */
+      width: auto;
+      max-width: 100%;
+      display: block;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav a {
       margin-left: 20px;
       color: #fff;
       text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e63946;
     }
     .hero {
-      background: url('hero-bg.jpg') no-repeat center center/cover;
+      background: url(pictures/da_streetz_super_hero_art.png) no-repeat center center/cover;
       height: 90vh;
       display: flex;
       flex-direction: column;
@@ -37,6 +69,14 @@
       align-items: center;
       text-align: center;
       padding: 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+    .hero img{
+      height: 50vh; /* Adjust as needed */
+      width: auto;
+      align-content: center;
+      max-width: 100%;
+      display: block;
     }
     .hero h1 {
       font-size: 4rem;
@@ -46,37 +86,58 @@
       font-size: 1.5rem;
       margin-bottom: 2rem;
     }
-    .hero .btn {
+    .btn {
       padding: 0.8rem 1.5rem;
-      margin: 0 0.5rem;
+      margin: 0.5rem;
       font-size: 1rem;
       background: #e63946;
       color: #fff;
       border: none;
       cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
     }
     section {
       padding: 4rem 2rem;
+      animation: fadeIn 1s ease-in;
     }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
     .features, .media, .buy, .community {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       text-align: center;
     }
+
+    .features_bg{
+      background: url(videos/Tutorial_3.mp4);
+    }
+
+    .buy{
+      background:url(pictures/Da\ Streetz\ Poster\ Art.png)
+    }
+
     .media img {
       width: 100%;
       border-radius: 10px;
+      transition: transform 0.3s;
     }
-    .footer {
-      background: #1f1f1f;
-      padding: 2rem;
+    .media img:hover {
+      transform: scale(1.03);
+    }
+    .newsletter {
       text-align: center;
-      font-size: 0.9rem;
     }
     .newsletter input {
       padding: 0.5rem;
-      margin-right: 0.5rem;
+      margin: 0.5rem;
+      width: 200px;
     }
     .newsletter button {
       padding: 0.5rem 1rem;
@@ -84,12 +145,56 @@
       color: #fff;
       border: none;
     }
+    .footer {
+      background: #1f1f1f;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      nav {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+      }
+      nav.active {
+        display: flex;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      .hero {
+        height: auto;
+        padding: 3rem 1rem;
+      }
+      .newsletter input {
+        width: 90%;
+        max-width: 300px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">GameTitle</div>
+    <div class="logo">
+    <img src="pictures/Da Streetz logo.png" alt="Da Streetz">
+      <!--Da Streetz-->
+    </div>
+    <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</button>
     <nav>
       <a href="#features">Features</a>
       <a href="#media">Media</a>
@@ -100,16 +205,16 @@
   </header>
 
   <section class="hero">
-    <h1>Game Title</h1>
+    <h1><img src="pictures/Da Streetz logo.png" alt="Da Streetz"></h1>
     <p>Enter the world of Da Streetz – Fight, Explore, Customize</p>
     <button class="btn">Watch Trailer</button>
-    <button class="btn">Buy Now</button>
+    <button class="btn"><a href="ms-appinstaller:?source=http://munnuo.com/"></a>Try Demo</button>
   </section>
 
   <section id="features">
     <h2>Game Features</h2>
     <div class="features">
-      <div>
+      <div class="features_bg">
         <h3>Open World</h3>
         <p>Explore freely in a massive dynamic world</p>
       </div>
@@ -172,7 +277,7 @@
   </section>
 
   <footer class="footer">
-    <p>&copy; 2025 GameTitle Studios. All rights reserved.</p>
+    <p>&copy; 2025 Da Streetz | Munnuo Games Studio. All rights reserved.</p>
     <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
   </footer>
 
