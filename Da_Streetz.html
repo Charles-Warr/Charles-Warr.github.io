@@ -21,7 +21,7 @@
       overflow-x: hidden;
     }
     header {
-      background: #1f1f1f;
+      background: #c90808;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -90,7 +90,7 @@
       padding: 0.8rem 1.5rem;
       margin: 0.5rem;
       font-size: 1rem;
-      background: #e63946;
+      background: #c90808;
       color: #fff;
       border: none;
       cursor: pointer;
@@ -104,6 +104,8 @@
       animation: fadeIn 1s ease-in;
     }
     h2 {
+      color: #c90808;
+      font-size: xx-large;
       text-align: center;
       margin-bottom: 2rem;
     }
@@ -119,10 +121,19 @@
       background: url(videos/Tutorial_3.mp4);
     }
 
-    .buy{
-      background:url(pictures/Da\ Streetz\ Poster\ Art.png)
+    .buy img{
+      width: auto;
+      height: 50vh;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      
     }
 
+    .media video{
+      width: 100%;
+      border-radius: 2vw;
+      transition: transform 0.3s;
+    }
     .media img {
       width: 100%;
       border-radius: 10px;
@@ -145,12 +156,24 @@
       color: #fff;
       border: none;
     }
+
+    .community img{
+      width: 10vw;
+      border-radius: 2vw;
+    }
+
     .footer {
       background: #1f1f1f;
       padding: 2rem;
       text-align: center;
       font-size: 0.9rem;
     }
+
+    .footer img{
+      width: 10vw;
+      border-radius: 2vw;
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -220,11 +243,11 @@
       </div>
       <div>
         <h3>Combat & Customization</h3>
-        <p>Fight enemies and personalize your gear and base</p>
+        <p>Fight enemies and personalize your experience by buying furniture and placing it around anywhere</p>
       </div>
       <div>
-        <h3>Immersive Story</h3>
-        <p>Uncover secrets in a narrative-driven experience</p>
+        <h3>Ever expanding World and Story</h3>
+        <p>Uncover secrets in a narrative-driven experience in a world they forever updated</p>
       </div>
     </div>
   </section>
@@ -232,9 +255,9 @@
   <section id="media">
     <h2>Media</h2>
     <div class="media">
-      <img src="screenshot1.jpg" alt="Screenshot 1">
-      <img src="screenshot2.jpg" alt="Screenshot 2">
-      <img src="screenshot3.jpg" alt="Screenshot 3">
+      <video src="videos/tutorial_combo.mp4" autoplay muted loop alt="video tutorial combo"></video>
+      <video src="videos/tutorial_holding_objects.mp4" autoplay muted loop alt="video tutorial holding objects"></video>
+      <video src="videos/tutorial_headshots.mp4" autoplay muted loop alt="video tutorial shooting"></video>
     </div>
   </section>
 
@@ -245,11 +268,15 @@
         <h3>Standard Edition</h3>
         <p>Base game + Free Updates</p>
         <button class="btn">Buy</button>
+        <br>
+        <img src="pictures/Da_Streetz_poster_art.png">
       </div>
       <div>
         <h3>Deluxe Edition</h3>
         <p>Includes exclusive gear & bonus content</p>
         <button class="btn">Buy</button>
+        <br>
+        <img src="pictures/da_streetz_deluxe_poster_art.png">
       </div>
     </div>
   </section>
@@ -260,6 +287,9 @@
       <div>
         <h3>Discord</h3>
         <p>Chat with devs and players</p>
+        <a href="https://discord.gg/gH57ZqFtja">
+        <img src="pictures/discord_logo.png">
+        </a>
       </div>
       <div>
         <h3>Forum</h3>
@@ -267,7 +297,7 @@
       </div>
     </div>
   </section>
-
+<!----
   <section class="newsletter">
     <h2>Stay Updated</h2>
     <p>Sign up for our newsletter</p>
@@ -275,10 +305,12 @@
     <input type="email" placeholder="Your Email">
     <button>Subscribe</button>
   </section>
-
+-->
   <footer class="footer">
+    <a href="index.html">
+    <img src="pictures/munno word.png"></a>
     <p>&copy; 2025 Da Streetz | Munnuo Games Studio. All rights reserved.</p>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    <p><a href="privacypolicy.html">Privacy Policy</a> | <a href="terms&conditions.html">Terms of Use</a></p>
   </footer>
 
 </body>

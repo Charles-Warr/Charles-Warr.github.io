@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Forum | Da Streetz</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo img {
+      height: 40px;
+      width: auto;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e63946;
+    }
+    main {
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .forum-category {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: background 0.3s;
+    }
+    .forum-category:hover {
+      background: #292929;
+    }
+    .forum-category h2 {
+      font-size: 1.5rem;
+      color: #e63946;
+    }
+    .forum-category p {
+      margin: 0.5rem 0;
+    }
+    .forum-category .stats {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #1f1f1f;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+      .forum-category h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="Da Streetz"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Forum</a>
+      <a href="#news">News</a>
+      <a href="#support">Support</a>
+      <a href="#profile">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Community Forum</h1>
+
+    <div class="forum-category">
+      <h2><a href="#">General Discussion</a></h2>
+      <p>Talk about the game, updates, and your experiences</p>
+      <p class="stats">Threads: 120 | Posts: 1,540 | Last Post: PlayerOne - Aug 1</p>
+    </div>
+
+    <div class="forum-category">
+      <h2><a href="#">Bug Reports & Feedback</a></h2>
+      <p>Report issues and suggest improvements</p>
+      <p class="stats">Threads: 75 | Posts: 800 | Last Post: DevTeam - Jul 30</p>
+    </div>
+
+    <div class="forum-category">
+      <h2><a href="#">Fan Art & Creations</a></h2>
+      <p>Share artwork, mods, and creative work</p>
+      <p class="stats">Threads: 60 | Posts: 490 | Last Post: SketchyUser - Jul 28</p>
+    </div>
+
+    <div class="forum-category">
+      <h2><a href="#">Guides & Tips</a></h2>
+      <p>Post walkthroughs and gameplay strategies</p>
+      <p class="stats">Threads: 42 | Posts: 300 | Last Post: ProGamer - Jul 27</p>
+    </div>
+
+    <div class="forum-category">
+      <h2><a href="#">Off Topic</a></h2>
+      <p>Discuss anything not related to the game</p>
+      <p class="stats">Threads: 100 | Posts: 1,200 | Last Post: MemeLord - Jul 26</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Da Streetz Community. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moji World | Official Website</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      color: #fff;
+      background-color: #121212;
+      overflow-x: hidden;
+    }
+    header {
+      background: black;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .logo img {
+      height: 5vh; /* Adjust as needed */
+      width: auto;
+      max-width: 100%;
+      display: block;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #1138e6;
+    }
+    .hero {
+      background: url(pictures/moji_world_super_hero_art_2.png) no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+    .hero img{
+      height: 50vh; /* Adjust as needed */
+      width: auto;
+      align-content: center;
+      max-width: 100%;
+      display: block;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      background: #1138e6;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    section {
+      padding: 4rem 2rem;
+      animation: fadeIn 1s ease-in;
+    }
+    h2 {
+      color: #1138e6;
+      font-size: xx-large;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .features, .media, .buy, .community {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .features_bg{
+      background: url(videos/Tutorial_3.mp4);
+    }
+
+    .buy img{
+      width: auto;
+      height: 50vh;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      
+    }
+
+    .media video{
+      width: 100%;
+      border-radius: 2vw;
+      transition: transform 0.3s;
+    }
+    .media img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .media img:hover {
+      transform: scale(1.03);
+    }
+    .newsletter {
+      text-align: center;
+    }
+    .newsletter input {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      width: 200px;
+    }
+    .newsletter button {
+      padding: 0.5rem 1rem;
+      background: #e63946;
+      color: #fff;
+      border: none;
+    }
+
+    .community img{
+      width: 10vw;
+      border-radius: 2vw;
+    }
+
+    .footer {
+      background: #1f1f1f;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .footer img{
+      width: 10vw;
+      border-radius: 2vw;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      nav {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+      }
+      nav.active {
+        display: flex;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      .hero {
+        height: auto;
+        padding: 3rem 1rem;
+      }
+      .newsletter input {
+        width: 90%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+    <img src="pictures/moji_world_logo.png" alt="Moji World">
+      <!--Da Streetz-->
+    </div>
+    <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</button>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#media">Media</a>
+      <a href="#buy">Buy</a>
+      <a href="#community">Community</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1><img src="pictures/moji_world_logo.png" alt="Moji World"></h1>
+    <p>Play as Chuck in the World of Moji – Fight, Explore, and Experience A Story</p>
+    <button class="btn">Watch Trailer</button>
+    <button class="btn"><a href=""></a>Try Demo</button>
+  </section>
+
+  <section id="features">
+    <h2>Game Features</h2>
+    <div class="features">
+      <div class="features_bg">
+        <h3>Open World</h3>
+        <p>Explore freely in a bright-color neighborhood</p>
+      </div>
+      <div>
+        <h3>Combat & Mysteries</h3>
+        <p>Fight enemies and solve puzzles</p>
+      </div>
+      <div>
+        <h3>Engaging Story</h3>
+        <p>Follow the story of Chuck and Delora in this dramatic, emotion filled storyline.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="media">
+    <h2>Media</h2>
+    <div class="media">
+      <video src="videos/moji_world_1.mp4" autoplay muted loop alt="video tutorial combo"></video>
+      <video src="videos/moji_world_2.mp4" autoplay muted loop alt="video tutorial holding objects"></video>
+      <video src="videos/moji_world_3.mp4" autoplay muted loop alt="video tutorial shooting"></video>
+    </div>
+  </section>
+
+  <section id="buy">
+    <h2>Buy Now</h2>
+    <div class="buy">
+      <div>
+        <h3>Standard Edition</h3>
+        <p>Base game + Free Updates</p>
+        <button class="btn">Buy</button>
+        <br>
+        <img src="pictures/moji_world_poster_art.png">
+      </div>
+      <div>
+        <h3>Deluxe Edition</h3>
+        <p>Includes exclusive gear & bonus content</p>
+        <button class="btn">Buy</button>
+        <br>
+        <img src="pictures/da_streetz_deluxe_poster_art.png">
+      </div>
+    </div>
+  </section>
+
+  <section id="community">
+    <h2>Join the Community</h2>
+    <div class="community">
+      <div>
+        <h3>Discord</h3>
+        <p>Chat with devs and players</p>
+        <a href="https://discord.gg/gH57ZqFtja">
+        <img src="pictures/discord_logo.png">
+        </a>
+      </div>
+      <div>
+        <h3>Forum</h3>
+        <p>Post feedback, tips & fan art</p>
+      </div>
+    </div>
+  </section>
+<!----
+  <section class="newsletter">
+    <h2>Stay Updated</h2>
+    <p>Sign up for our newsletter</p>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button>Subscribe</button>
+  </section>
+-->
+  <footer class="footer">
+    <a href="index.html">
+    <img src="pictures/munno word.png"></a>
+    <p>&copy; 2025 Moji World | Munnuo Games Studio. All rights reserved.</p>
+    <p><a href="privacypolicy.html">Privacy Policy</a> | <a href="terms&conditions.html">Terms of Use</a></p>
+  </footer>
+
+</body>
+</html>
