@@ -8,5 +8,10 @@ reachable to others.
 
 Feel free to use the website at your discretion. 
 
+# Demo Downloads
+
+Any game demos downloaded from the website have all the neccessary files inside their packaging to run the game.
+There will be an executable file within the folder of the download, just run the executable to play the game.
+
 
 

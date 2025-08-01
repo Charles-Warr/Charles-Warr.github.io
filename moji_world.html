@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moji World | Official Website</title>
+  <script src="js/playVideo.js" defer></script>
   <style>
     html {
       scroll-behavior: smooth;
@@ -214,7 +215,7 @@
 
   <header>
     <div class="logo">
-    <img src="pictures/moji_world_logo.png" alt="Moji World">
+    <a href="index.html"><img src="pictures/munno word.png" alt="Moji World"></a>
       <!--Da Streetz-->
     </div>
     <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</button>
@@ -230,8 +231,12 @@
   <section class="hero">
     <h1><img src="pictures/moji_world_logo.png" alt="Moji World"></h1>
     <p>Play as Chuck in the World of Moji – Fight, Explore, and Experience A Story</p>
-    <button class="btn">Watch Trailer</button>
-    <button class="btn"><a href=""></a>Try Demo</button>
+    <button class="btn" id="playButton">Watch Trailer</button>
+    <div id="videoContainer" style="display: none;">
+        <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/79-2d2J89fg?si=d5lNvPOJs8yXHp0n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+ <!----   <button class="btn"><a href=""></a>Try Demo</button> -->
   </section>
 
   <section id="features">
@@ -269,14 +274,14 @@
         <p>Base game + Free Updates</p>
         <button class="btn">Buy</button>
         <br>
-        <img src="pictures/moji_world_poster_art.png">
+        <img src="pictures/moji_world_poster_art_super.png">
       </div>
       <div>
         <h3>Deluxe Edition</h3>
         <p>Includes exclusive gear & bonus content</p>
         <button class="btn">Buy</button>
         <br>
-        <img src="pictures/da_streetz_deluxe_poster_art.png">
+        <img src="pictures/moji_world_poster_art.png">
       </div>
     </div>
   </section>

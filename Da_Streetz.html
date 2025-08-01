@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Da Streetz | Official Website</title>
+  <script src="js/playVideo.js" defer></script>
   <style>
     html {
       scroll-behavior: smooth;
@@ -214,7 +215,7 @@
 
   <header>
     <div class="logo">
-    <img src="pictures/Da Streetz logo.png" alt="Da Streetz">
+    <a href="index.html"><img src="pictures/munno word.png" alt="Da Streetz"></a>
       <!--Da Streetz-->
     </div>
     <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</button>
@@ -230,8 +231,12 @@
   <section class="hero">
     <h1><img src="pictures/Da Streetz logo.png" alt="Da Streetz"></h1>
     <p>Enter the world of Da Streetz – Fight, Explore, Customize</p>
-    <button class="btn">Watch Trailer</button>
-    <button class="btn"><a href="ms-appinstaller:?source=http://munnuo.com/"></a>Try Demo</button>
+    <a href=""><button class="btn">Watch Trailer</button></a>
+    <div id="videoContainer" style="display: none;">
+      <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/79-2d2J89fg?si=d5lNvPOJs8yXHp0n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+    <a href="https://drive.google.com/uc?export=download&id=1DWTUP-J_CLDZASh3ibcoYZxVtA8FTmXR&confirm=t"><button class="btn">Try Demo</button></a>
   </section>
 
   <section id="features">
