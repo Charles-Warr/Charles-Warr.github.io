@@ -453,7 +453,6 @@ a:hover {
   }
 }
 
-
 .team{
   margin: 1vw;
   text-align: center;
@@ -525,12 +524,14 @@ div.gallery{
 
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 3px solid rgb(59, 105, 255);
+  border-radius: 10px;
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 div.desc {

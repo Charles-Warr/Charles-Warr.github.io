@@ -86,9 +86,11 @@ html {
       background: #1138e6;
       color: #fff;
       border: none;
+      border-radius: 20px;
       cursor: pointer;
       transition: transform 0.2s;
     }
+
     .btn:hover {
       transform: scale(1.05);
     }
@@ -151,7 +153,7 @@ html {
     }
 
     .community img{
-      width: 10vw;
+      width: 10em;
       border-radius: 2vw;
     }
 
