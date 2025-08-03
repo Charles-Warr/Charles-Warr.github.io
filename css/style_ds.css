@@ -111,11 +111,15 @@ html {
     }
 
     .buy img{
-      width: auto;
-      height: 50vh;
+      width: 15em;
+      height: auto;
       border-radius: 10px;
       transition: transform 0.3s;
       
+    }
+
+    .buy p{
+      font-size: 1em;
     }
 
     .media video{
@@ -147,8 +151,8 @@ html {
     }
 
     .community img{
-      width: 10vw;
-      border-radius: 2vw;
+      width: 10em;
+      border-radius: 5px;
     }
 
     .footer {

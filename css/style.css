@@ -494,6 +494,23 @@ a:hover {
     max-width: 30%;
     max-height: 30%;
   }
+
+  @media (max-width: 576px) {
+  /* line 99, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_common.scss */
+  h1{
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 0.75em;
+    line-height: 25px;
+  }
+
+  p{
+    font-size: 0.5rem;
+  }
+
+}
 }
 
 .team_table, th, td{
