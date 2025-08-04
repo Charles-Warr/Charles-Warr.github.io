@@ -918,13 +918,14 @@ html, body{
   font-size: 15px;
   font-family: "Aclonica", sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: whitesmoke;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   text-transform: capitalize;
   background-size: 200% auto;
   border: 1px solid transparent;
+  border-radius: 7.5px;
 }
 
 /* line 39, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_button.scss */
