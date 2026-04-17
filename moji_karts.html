@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moji Karts | Official Website</title>
+  <script src="js/playVideo.js" defer></script>
+  <link rel="stylesheet" href="css/style_mk.css" type="text/css">
+  <link rel="icon" href="pictures/munnuo logo.png">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Munnuo" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+    <a href="index.html"><img src="pictures/munno word.png" alt="Moji Karts"></a>
+      <!--Moji Karts-->
+    </div>
+    <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</button>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#media">Media</a>
+      <a href="#buy">Buy</a>
+      <a href="#community">Community</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <!--<h1><img src="pictures/mk_logo.png" alt="Moji Karts"></h1>-->
+    <p>Race on the track and beat challenges – Time Trials, Lap Races, and Collectible Missions</p>
+    <button class="btn" id="playButton">Watch Trailer</button>
+    <div id="videoContainer" style="display: none;">
+        <iframe id="youtubeVideo" width="560" height="315" src="https://youtu.be/tV-uOYLCQcU?si=WR_FHKkx2rkjw-Qu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+ <!----   <button class="btn"><a href=""></a>Try Demo</button> -->
+  </section>
+
+  <section id="features">
+    <h2>Game Features</h2>
+    <div class="features">
+      <div class="features_bg">
+        <h3>Mobile Karts</h3>
+        <p>Drive on the track and set records!</p>
+      </div>
+      <div>
+        <h3>Race & Challenges</h3>
+        <p>Diverse modes and challenges to complete on unique maps</p>
+      </div>
+      <div>
+        <h3>Select Characters</h3>
+        <p>Choose different racers as you play</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="media">
+    <h2>Media</h2>
+    <div class="media">
+      <video src="videos/moji_karts_1.mp4" autoplay="autoplay" muted loop="loop" alt="video tutorial combo"></video>
+      <video src="videos/moji_karts_2.mp4" autoplay="autoplay" muted loop="loop" alt="video tutorial holding objects"></video>
+      <video src="videos/moji_karts_3.mp4" autoplay="autoplay" muted loop="loop" alt="video tutorial shooting"></video>
+    </div>
+  </section>
+
+  <section id="buy">
+    <h2>Get Now</h2>
+    <div class="buy">
+      <div>
+        <h3>Standard Edition</h3>
+        <p>Base game + Free Updates</p>
+        <button href="https://apps.apple.com/us/app/moji-karts/id1612717724" class="btn">Get</button>
+        <br>
+        <img src="pictures/moji_karts_poster_art_super.png">
+      </div>
+    </div>
+  </section>
+
+  <section id="community">
+    <h2>Join the Community</h2>
+    <div class="community">
+      <div>
+        <h3>Discord</h3>
+        <p>Chat with devs and players</p>
+        <a href="https://discord.gg/gH57ZqFtja">
+        <img src="pictures/discord_logo.png">
+        </a>
+      </div>
+      <div>
+        <h3>Forum</h3>
+        <p>Post feedback, tips & fan art</p>
+      </div>
+    </div>
+  </section>
+<!----
+  <section class="newsletter">
+    <h2>Stay Updated</h2>
+    <p>Sign up for our newsletter</p>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button>Subscribe</button>
+  </section>
+-->
+  <footer class="footer">
+    <a href="index.html">
+    <img src="pictures/munno word.png"></a>
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is powered by Munnuo Games Studio
+    <p><a href="privacypolicy.html">Privacy Policy</a> | <a href="terms&conditions.html">Terms of Use</a></p>
+  </footer>
+
+</body>
+</html>
