@@ -51,10 +51,10 @@ html {
       transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #1138e6;
+      color: #5c11e6;
     }
     .hero {
-      background: url(../pictures/moji_world_super_hero_art_2.png) no-repeat center center/cover;
+      background: url(../pictures/haunted_stories_super_hero_art_2.png) no-repeat center center/cover;
       height: 90vh;
       display: flex;
       flex-direction: column;
@@ -83,7 +83,7 @@ html {
       padding: 0.8rem 1.5rem;
       margin: 0.5rem;
       font-size: 1rem;
-      background: #1138e6;
+      background: #5c11e6;
       color: #fff;
       border: none;
       border-radius: 20px;
@@ -99,7 +99,7 @@ html {
       animation: fadeIn 1s ease-in;
     }
     h2 {
-      color: #1138e6;
+      color: #5c11e6;
       font-size: xx-large;
       text-align: center;
       margin-bottom: 2rem;
