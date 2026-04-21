@@ -124,6 +124,17 @@ html {
       
     }
 
+    .btn-link img {
+      width: auto;
+      height: 25vh;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .btn-link img:hover {
+      transform: scale(1.03);
+    }
+    
     .media video{
       width: 100%;
       border-radius: 2vw;
