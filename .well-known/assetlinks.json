@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.MUNNUO.MojiKarts",
+      "sha256_cert_fingerprints": [
+        "6C:81:6C:8B:41:48:47:74:6A:24:1A:28:9F:CF:A1:1C:C0:57:55:C4:2F:06:BB:7E:48:F1:FA:C0:32:64:4C:B4"
+      ]
+    }
+  }
+]
