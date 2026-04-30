@@ -95,17 +95,6 @@ html {
       transform: scale(1.05);
     }
 
-    .btn-link img {
-      width: auto;
-      height: 25vh;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-
-    .btn-link img:hover {
-      transform: scale(1.03);
-    }
-
     section {
       padding: 4rem 2rem;
       animation: fadeIn 1s ease-in;
@@ -134,6 +123,17 @@ html {
       border-radius: 10px;
       transition: transform 0.3s;
       
+    }
+
+    .btn-link img {
+      width: auto;
+      height: 25vh;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .btn-link img:hover {
+      transform: scale(1.03);
     }
 
     .media video{
