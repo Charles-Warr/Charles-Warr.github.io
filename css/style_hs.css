@@ -125,6 +125,7 @@ html {
     }
 
     .btn-link img {
+      max-width: 80%;
       width: auto;
       height: 25vh;
       border-radius: 10px;
