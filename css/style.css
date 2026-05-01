@@ -1270,6 +1270,17 @@ html, body{
   }
 }
 
+.btn-link img {
+      width: auto;
+      height: 25vh;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .btn-link img:hover {
+      transform: scale(1.03);
+    }
+
 /* line 159, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_blog.scss */
 .full_image.single-blog {
   position: relative;
