@@ -1270,6 +1270,32 @@ html, body{
   }
 }
 
+/* 1. Basic list reset */
+.mobile-grid {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 2. Mobile Grid (Screens smaller than 600px) */
+@media (max-width: 600px) {
+  .mobile-grid {
+    display: grid;
+    /* This creates 2 equal columns */
+    grid-template-columns: repeat(2, 1fr); 
+    /* Spacing between items */
+    gap: 10px; 
+  }
+
+  .mobile-grid li {
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+}
+
 .btn-link img {
       max-width: 95%;
       width: auto;
