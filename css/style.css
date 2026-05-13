@@ -43,7 +43,7 @@ body {
 
 .homepage_body{
   position: relative, top;
-  background-image: url(../pictures/chuck_moji_world.png);
+  background-image: url(../pictures/hero-bg.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -481,7 +481,7 @@ a:hover {
   }
 
   ul {
-    background-image: url("../img/gallery_bg.png");
+    background-image: url("../img/banner_bg.png");
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -2984,7 +2984,7 @@ html, body{
 /* line 2, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_banner.scss */
 .banner_part {
   position: relative, absolute;
-  background-image: url(../pictures/chuck_moji_world.png);/*("\\Users\munnu\Desktop\Catalyte Dev\munnuo_website\pictures\keith_delora_bg.png");/**/
+  background-image: url(../pictures/body-bg.png);/*("\\Users\munnu\Desktop\Catalyte Dev\munnuo_website\pictures\keith_delora_bg.png");/**/
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
