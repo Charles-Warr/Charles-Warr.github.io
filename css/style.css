@@ -435,6 +435,22 @@ a:hover {
   text-decoration: none;
 }
 
+.support-nav{
+ /* The container holding your list items */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Space out the individual navigation items */
+nav ul li {
+    margin-right: 20px; 
+}
+}
+
+
 .universe{
 
   margin: 1em;
